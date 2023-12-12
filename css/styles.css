@@ -159,7 +159,7 @@
         display: flex; 
         align-items: center; 
         justify-content: center; 
-        background-color: #e7e9fc; 
+        background-color: #FFF; 
         border: 1px solid rgba(0, 0, 0, 0.1); 
         padding: 0; 
         cursor: pointer; 
@@ -263,8 +263,7 @@
         margin-bottom:  24px;
       }
    }
-/*=========== /MOBILE HEADER STYLE ==============*/
- 
+
 /*============ TABLET HEADER STYLE ==============*/
    @media screen  and (min-width: 768px) {
     
@@ -375,7 +374,6 @@
 }
 
 }
-/*============ /TABLET HEADER STYLE =============*/
 
  /*=========== DESCTOP HEADER STYLE =============*/
  @media screen  and (min-width: 1158px) {
@@ -401,7 +399,7 @@
   }
 
  }
- /*============ /DESCTOP HEADER STYLE ============*/
+
 
  /*============ HERO MOBILE STYLE ==============*/
  .hero-button {
@@ -705,11 +703,9 @@ background-color: var(--accent-color);
    rgba(46, 47, 66, 0.7)), url("../images/mobil/people-mob.jpg");
   } 
  }
- /*============ /HERO MOBILE STYLE ==============*/
 
  /*============ HERO TABLET STYLE ==============*/
 
- 
  .hero-title {
   font-weight: 700;
   font-size: 56px;
@@ -726,7 +722,7 @@ background-color: var(--accent-color);
   margin-left: auto;
   margin-right: auto;
   }
- 
+  @media screen  and (min-width: 768px) {
     /****************** BACKDROP ******************/
     .backdrop {
       position: fixed;
@@ -951,7 +947,7 @@ background-color: var(--accent-color);
           transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
         }
            
- @media screen  and (min-width: 768px) {
+ 
 
   .hero-section {
     background-color: var(--title-text-color);
@@ -983,7 +979,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
   rgba(46, 47, 66, 0.7)), url("../images/tablet/people-tablet-2x.jpg");
  } 
 }
- /*============ /HERO TABLET STYLE ==============*/
 
  /*============ HERO DESCTOP STYLE ==============*/
 
@@ -1021,7 +1016,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
   rgba(46, 47, 66, 0.7)), url("../images/desktop/people-office-2x-desktop.jpg");
  } 
 }
-/*============ / HERO DESCTOP STYLE ==============*/
+
 
 /*============ BENEFITS MOBILE ==============*/
 
@@ -1059,7 +1054,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
   }
   
  }
-/*============ / BENEFITS MOBILE ==============*/
 
 /*============ BENEFITS TABLET ==============*/
 @media screen  and (min-width: 768px) {
@@ -1074,7 +1068,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
 
 
 }
-/*============ / BENEFITS TABLET ==============*/
 
 /*============ BENEFITS DESCTOP ==============*/
 @media screen  and (min-width: 1158px) {
@@ -1134,7 +1127,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
     }
   
 }
-/*============ / BENEFITS DESCTOP ==============*/
 
 /*============ PERSON MOBILE ==============*/
 .person-section {
@@ -1240,9 +1232,7 @@ width: 264px;
 
   }
 
-/*============ / PERSON  MOBILE ==============*/
-
-/*============  BENEFITS TABLET ==============*/
+/*============  PERSON TABLET ==============*/
 @media screen  and (min-width: 768px) {
   .person-list {
     display: flex;
@@ -1253,11 +1243,143 @@ width: 264px;
 
 }
 
-/*============ / BENEFITS TABLET ==============*/
-
 /*============  PERSON  DESCTOP ==============*/
 @media screen  and (min-width: 1158px) {
+}
+
+
+/*============ PORTFOLIO MOBILE ==============*/
+
+.portfolio-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px 
+  rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  
+}
+
+.portfolio-info {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.portfolio-img {
+  display: block; 
+  max-width: 100%; 
+  height: auto;
+}
+
+
+.portfolio-img-deco {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  overflow: auto;
+  font-size: 16px;
+  line-height: 1.5; 
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%; 
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.portfolio-item:hover .overlay{
+  transform: translateY(0%);
+}
  
+  .portfolio-section {
+    background-color: var(--primari-white-color); 
+  }
+
+  .portfolio-title {
+    margin-bottom: 72px;
+    align-items: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--title-text-color);
+  }
+
+  .portfolio-name {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--title-text-color);
+  }
+  
+  .portfolio-text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;   
+  }
+
+  .portfolio-info :hover {
+    transform: translateY(0%);
+  }
+  
+@media screen  and (max-width: 767px) {
+  .portfolio-list {
+   display: flex;
+      flex-direction: column; 
+      gap: 48px;
+      align-items: center;
+    } 
+    
+    .portfolio-item {
+      width: 288px;
+    }
+}
+/*============ PORTFOLIO TABLET ==============*/
+@media screen  and (min-width: 768px) {
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+    justify-content: center;
+  }
+
+
+  .portfolio-item {
+    width: 356px;
+  }
+}
+/*============ PORTFOLIO DESCTOP ==============*/
+@media screen  and (min-width: 1158px) {
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+    .portfolio-item {
+    width: 360px;
+  }
+}
+
+/*============ FOOTER DESCTOP ==============*/
+@media screen  and (max-width: 767px) {
 
 }
-/*============ / PERSON  DESCTOP ==============*/
+/*============ FOOTER TABLET ==============*/
+@media screen  and (min-width: 768px) {
+  
+}
+
+
+/*============ FOOTER DESCTOP ==============*/
+@media screen  and (min-width: 1158px) {
+
+}
