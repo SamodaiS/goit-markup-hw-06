@@ -529,9 +529,7 @@ column-gap: 24px;
 
 /*================================ footer-container============================ */
 
- .section-footer {
-  padding: 100px 0;
-}
+
 
 .container-footer {
 display: flex;
@@ -590,6 +588,7 @@ align-items: baseline;
   /***************************** Footer *******************************/
   .section-footer {
     background-color: var(--title-text-color);
+    padding: 100px 0;
  height:312px;
 }
 
